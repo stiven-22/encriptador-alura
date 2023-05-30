@@ -1,0 +1,126 @@
+body {
+    background: #E5E5E5;
+    width: auto;
+    padding: 20px;
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+    display: block;
+    width: 100%;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+header .logo {
+    display: block;
+    width: 100%;
+}
+
+header .logo img {
+    display: block;
+    width: 120px;
+}
+
+main {
+    position: relative;
+    vertical-align: top;
+}
+
+.panelIzquierdo {
+    display: inline-block;
+    width: 45%;
+    vertical-align: top;
+    padding: 20px;
+}
+
+.panelIzquierdo #texto {
+    display: block;
+    width: 100%;
+    font-size: 35px;
+    font-weight: bold;
+    background: transparent;
+    border: 0;
+    padding: 15px;
+    height: 200px;
+    font-family: 'Inter', sans-serif;
+}
+
+.panelIzquierdo div {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.panelIzquierdo div button {
+    display: inline-block;
+    color: #0a3871;
+    border: 0;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 0px 10px;
+}
+
+.panelIzquierdo div #encr {
+    background: #0a3871;
+    color: #fff;
+}
+
+.panelDerecho {
+    display: inline-block;
+    width: 45%;
+    vertical-align: top;
+    background: #fff;
+    border-radius: 30px;
+    padding: 30px;
+}
+
+.panelDerecho #mensaje {
+    text-align: center;
+}
+
+.panelDerecho #mensaje h3 {
+    margin-bottom: 10px;
+}
+
+.panelDerecho #resultado {
+    display: block;
+    width: 100%;
+    font-weight: bold;
+    text-align: center;
+    color: #0a3871;
+    height: 288px;
+    font-size: 35px;
+    border: 0;
+    background: transparent;
+    display: none;
+}
+
+.panelDerecho #copiar {
+    background: #0a3871;
+    color: #fff;
+    display: block;
+    border: 0;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: none;
+}
+
+@media screen and (max-width: 1100px) {
+    .panelIzquierdo {
+        width: 42%;
+    }
+}
+
+@media screen and (max-width: 859px) {
+    .panelIzquierdo, .panelDerecho {
+        width: 100%;
+    }
+
+    .panelDerecho {
+        margin-top: 30px;
+    }
+}
